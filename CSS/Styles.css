@@ -20,6 +20,9 @@ body {
     align-items: center;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 /********** FIRST PAGE **********/
 
@@ -48,8 +51,9 @@ body {
     position: absolute;
     top: 20px;
     left: 50px;
-    font-size: 200px;
+    font-size: 14vw;
     margin-top: 75px;
+    padding-bottom: 10px;
     text-shadow: 4px 4px #d72323;
 }
 
@@ -58,7 +62,7 @@ body {
     position: absolute;
     top: 155px;
     left: 50px;
-    font-size: 200px;
+    font-size: 14vw;
     text-shadow: 4px 4px #d72323;
 }
 
@@ -67,8 +71,9 @@ body {
     position: absolute;
     left: 65px;
     top: 470px;
-    font-size: 40px;
+    font-size: 2vw;
     margin-top: 50px;
+    padding-top: 10px;
 }
 
 /********** BUTTONS **********/
@@ -76,13 +81,14 @@ body {
 #about {
     background-color: #3A4750;
     border: hidden;
-    color: #EEEEEE;
+    color: white;
     font-size: 18px;
     transition-duration: 0.4s;
     position: absolute;
     right: 190px;
     top: 40px;
     padding: 20px;
+    cursor: pointer;
 }
 
 #about:hover {
@@ -93,13 +99,14 @@ body {
 #contact {
     background-color: #3A4750;
     border: hidden;
-    color: #EEEEEE;
+    color: white;
     transition-duration: 0.4s;
     font-size: 18px;
     position: absolute;
     right: 65px; 
     top: 40px;
     padding: 20px;
+    cursor: pointer;
 }
 
 #contact:hover {
@@ -110,13 +117,14 @@ body {
 #portfolio {
     background-color: #3A4750;
     border: hidden;
-    color: #EEEEEE;
+    color: white;
     transition-duration: 0.4s;
     font-size: 18px;
     position: absolute;
     left: 50px; 
     top: 40px;
     padding: 20px;
+    cursor: pointer;
 }
 
 #portfolio:hover {
@@ -179,77 +187,7 @@ body {
     font-size: 40px;
     text-align: center;
     margin-top: 20px;
-}
-
-.circle {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #EEEEEE;
-    margin-left: 735px;
-}
-
-.circleSmall {
-    border-radius: 50%;
-    background-color: #D72323;
-    height: 20px;
-    width: 20px;
-    margin-left: 745px;
-    margin-top: -29px;
-}
-
-.line {
-    border-left: 10px solid #EEEEEE;
-    height: 450px;
-    margin-left: 749px;
-}
- 
-.circleTwo {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #EEEEEE;
-    margin-left: 735px;
-    margin-top: -10px;
-}
-
-.circleSmallTwo {
-    border-radius: 50%;
-    background-color: #D72323;
-    height: 20px;
-    width: 20px;
-    margin-left: 745px;
-    margin-top: -29px;
-}
-
-#university {
-    color: white;
-    margin-left: 790px;
-    margin-top: -510px;
-}
-
-#course {
-    color: #C3C3C3;
-    margin-left: 792px;
-    margin-top: -10px;
-}
-
-#period {
-    color: #C3C3C3;
-    margin-left: 792px;
-    margin-top: -10px;
-}
-
-#highschool {
-    color: white;
-    margin-left: 168px;
-    margin-top: 385px;
-}
-
-#periodTwo {
-    color: #C3C3C3;
-    margin-left: 614px;
-    margin-top: -10px;
+    padding-bottom: 30px;
 }
 
 /********** PORTFOLIO **********/
@@ -267,27 +205,52 @@ body {
     
 }
 
-.gallery{
-    margin-top: 70px;
-    margin-bottom: 70px;
-    margin-right: 70px;
-    margin-left: 80px
-    display: flex;
-    justify-content: center;
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
 }
 
+.gallery::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 800px){
+    .column {
+        width: 50%;
+        margin: 6px 0;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+    .column {
+        width: 100%;
+    }
+} 
+
 .gallery img{
-    width: 333px;
-    height: 250px;
-    padding: 10px;
+    width: 100%;
+    height: auto;
     transition: 1s;
 }
 
 .gallery img:hover {
-    filter: grayscale(0%);
-    transform: scale(1.3);
-    opacity: 1;
+    transform: scale(1.2);
 }
+
+.hint {
+    display: flex;
+    justify-content: center;
+    color: lightslategrey;
+    margin-bottom: 15px;
+}
+
+.gallery {
+    margin-right: 2%;
+}
+
 
 /********** CONTACT **********/
 
@@ -295,6 +258,9 @@ body {
     background: #d72323;
     padding: 10px;
     height: 30vh;
+    display: table;
+    width: 100%;
+    float: left;
 }
 
 #contactDetails {
@@ -306,12 +272,27 @@ body {
 
 .myDetails {
     display: flex;
+    height: 100%;
     justify-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-content: center;
     color: #C3C3C3;
 }
+
+@media only screen and (max-width: 800px){
+    .myDetails {
+        font-size: 15px;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+    .myDetails {
+        font-size: 10px;
+    }
+} 
 
 #linkedIn {
     width: 50px;
     height: 50px;
 }
+
