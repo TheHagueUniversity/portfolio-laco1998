@@ -1,0 +1,182 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #3A4750;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+
+
+#intro {
+    height: 100vh;
+}
+
+#intro img {
+    position: absolute;
+    top: 640px;
+    left: 727px;
+
+}
+
+#intro h4 {
+    position: absolute;
+    text-align: center;
+    top: 595px;
+    left: 0;
+    right: 0;
+    color: #EEEEEE;
+}
+
+#firstName {
+    color: #EEEEEE;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 200px;
+    margin-top: 75px;
+    text-shadow: 4px 4px #d72323;
+}
+
+#secondName {
+    color: #EEEEEE;
+    position: absolute;
+    top: 155px;
+    left: 50px;
+    font-size: 200px;
+    text-shadow: 4px 4px #d72323;
+}
+
+#description {
+    color: #C3C3C3;
+    position: absolute;
+    left: 65px;
+    top: 470px;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+#about {
+    background-color: #3A4750;
+    border: hidden;
+    color: #EEEEEE;
+    font-size: 18px;
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 190px;
+    top: 40px;
+    padding: 10px;
+}
+
+#about:hover {
+    background-color: #EEEEEE;
+    color: #3A4750;
+}
+
+#contact {
+    background-color: #3A4750;
+    border: hidden;
+    color: #EEEEEE;
+    transition-duration: 0.4s;
+    font-size: 18px;
+    position: absolute;
+    right: 65px; 
+    top: 40px;
+    padding: 10px;
+}
+
+#contact:hover {
+    background-color: #EEEEEE;
+    color: #3A4750;
+}
+
+#portfolio {
+    background-color: #3A4750;
+    border: hidden;
+    color: #EEEEEE;
+    transition-duration: 0.4s;
+    font-size: 18px;
+    position: absolute;
+    left: 50px; 
+    top: 40px;
+    padding: 10px;
+}
+
+#portfolio:hover {
+    background-color: #EEEEEE;
+    color: #3A4750;
+}
+
+
+#aboutMe {
+    color: #3A4750;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.introduction {
+    background-color: #EEEEEE;
+    padding-top: 10px;
+    height: 100vh;
+}
+
+#overview {
+    padding: 50px;
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: #3A4750;
+    color: #EEEEEE;
+    width: 723px;
+    border-radius: 25px;
+}
+
+.work {
+    background: #d72323;
+    padding-top: 10px;
+    height: 100vh''
+}
+
+#experience {
+    padding-bottom: 30px;
+    background-position: top;
+    color: #EEEEEE;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 0px;
+}
+
+#schools {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.portfolio {
+    background: #eeeeee;
+    padding: 10px;
+    height: 100vh''
+}
+
+#myWork {
+    font-size: 40px;
+    text-align: center;
+    color: #3A4750;
+}
+
+.details {
+    background: #d72323;
+    padding: 10px;
+    height: 50vh;
+}
+
+#contactDetails {
+    color: #EEEEEE;
+    text-align: center;
+    font-size: 40px;
+}
+
