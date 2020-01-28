@@ -25,7 +25,7 @@ body {
     box-sizing: border-box;
 }
 
-/********** FIRST PAGE **********/
+/********** HOME PAGE **********/
 
 .homepage {
     width: 100%;
@@ -37,47 +37,22 @@ body {
 
 .name {
     color: #EEEEEE;
-    font-size: 10vw;
-    margin-bottom: -20%;
+    font-size: 8vw;
+    margin-top: -10vh;
     margin-left: 5vw;
+    text-shadow: 5px 5px #D72323;
+    line-height: 140%;
+    padding: 0px;
 }
 
-/********** BUTTONS **********/
-
-#about {
-    background-color: #3A4750;
-    border: hidden;
-    color: white;
-    font-size: 18px;
-    transition-duration: 0.4s;
-    position: absolute;
-    right: 190px;
-    top: 40px;
-    padding: 20px;
-    cursor: pointer;
+#author {
+    margin-bottom: 25px;
 }
 
-#about:hover {
-    background-color: #EEEEEE;
-    color: #3A4750;
-}
-
-#contact {
-    background-color: #3A4750;
-    border: hidden;
-    color: white;
-    transition-duration: 0.4s;
-    font-size: 18px;
-    position: absolute;
-    right: 65px; 
-    top: 40px;
-    padding: 20px;
-    cursor: pointer;
-}
-
-#contact:hover {
-    background-color: #EEEEEE;
-    color: #3A4750;
+#scrollText {
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+    margin-bottom: 15px;
 }
 
 #portfolio {
@@ -85,12 +60,14 @@ body {
     border: hidden;
     color: white;
     transition-duration: 0.4s;
-    font-size: 18px;
-    position: absolute;
-    left: 50px; 
-    top: 40px;
-    padding: 20px;
+    font-size: 3vh;
+    padding: 2vw;
     cursor: pointer;
+}
+
+.allButtons {
+    text-align: center;
+    margin-top: 2vh;
 }
 
 #portfolio:hover {
@@ -98,6 +75,47 @@ body {
     color: #3A4750;
 }
 
+#aboutMeButton {
+    background-color: #3A4750;
+    border: hidden;
+    color: white;
+    font-size: 3vh;
+    transition-duration: 0.4s;
+    padding: 2vw;
+    cursor: pointer;
+}
+
+#aboutMeButton:hover {
+    background-color: #EEEEEE;
+    color: #3A4750;
+}
+
+#contactButton {
+    background-color: #3A4750;
+    border: hidden;
+    color: white;
+    transition-duration: 0.4s;
+    font-size: 3vh;
+    padding: 2vw;
+    cursor: pointer;
+}
+
+#contactButton:hover {
+    background-color: #EEEEEE;
+    color: #3A4750;
+}
+
+.scroll {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    color: #C3C3C3;
+}
+
+.profession {
+    margin-left: 6vw;
+    font-size: 3vh;
+    color: #C3C3C3;
+}
 
 /********** ABOUT ME PAGE **********/
 
@@ -118,12 +136,13 @@ body {
 
 .description {
     text-align: justify;
-    width: 40%;
+    width: 60%;
     background-color: #3A4750;
     color: #EEEEEE;
     padding: 2vw;
     margin-left: 5vw;
-    font-size: 1.5vw;
+    font-size: 4vh;
+    margin-bottom: 5vh;
 }
 
 /********** WORK EXPERIENCE **********/
@@ -157,8 +176,14 @@ body {
     color: white;
     font-size: 40px;
     text-align: center;
-    padding: 2vw;
+    padding: 2vw 1vw;
 }
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
 
 /********** PORTFOLIO **********/
 
