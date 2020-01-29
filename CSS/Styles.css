@@ -103,8 +103,7 @@ body {
 }
 
 .scroll {
-    display: table;
-    justify-content: center;
+    display: block;
     margin-left: 48vw;
     margin-top: 7vh;
 }
@@ -385,13 +384,12 @@ body {
 }
 
 #backButton:hover {
-    background-color: #EEEEEE;
-    color: #3A4750;
+    background-color: #D72323;
 }
 
 
 .firstProject {
-    height: 80vh;
+    height: auto;
     color: #EEEEEE;
     display: table;
     width: 100%;
@@ -399,18 +397,40 @@ body {
 
 .titleOne {
     text-align: center;
-    padding: 2vh;
     font-size: 5vh;
+    padding-top: 2vh;
 }
 
-#descriptionOne {
+.descriptions {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    padding: 2vh;
     text-align: justify;
-    width: 40vw;
-    padding: 5vh;
 }
 
+#hallmark1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -20vh;
+}
+
+@media only screen and (max-width: 800px){
+    #hallmark1 {
+        width: 30%;
+        margin: 6px 0;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+    #hallmark1 {
+        width: 100%;
+    }
+} 
                     .secondProject {
-                        height: 80vh;
                         background-color: #EEEEEE;
                         width: 100%;
                         height: auto;
@@ -420,20 +440,39 @@ body {
 
                     .titleTwo {
                         text-align: center;
-                        padding: 5vh;
                         font-size: 5vh;
+                        padding-top: 2vh;
                     }
 
                     #descriptionTwo {
                         text-align:justify;
-                        width: 40vw;
-                        padding: 2vh;
+                        width: 50vw;
                     }
+
+#hallmark2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -20vh;
+}
+
+@media only screen and (max-width: 800px){
+    #hallmark2 {
+        width: 30%;
+        margin: 6px 0;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+    #hallmark2 {
+        width: 100%;
+    }
+} 
+
 
 
 .thirdProject {
-    height: 80vh;
-    background-color: #D72323;
     width: 100%;
     height: auto;
     display: table;
@@ -442,20 +481,77 @@ body {
 
 .titleThree {
     text-align: center;
-    padding: 2vh;
     font-size: 5vh;
+    padding-top: 2vh;
+    color: #EEEEEE;
 }
 
+#descriptionThree {
+    color: #EEEEEE;
+    text-align: justify;
+    width: 50vw;
+}
+
+#shelf {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -20vh;
+}
+
+@media only screen and (max-width: 800px){
+    #shelf {
+        width: 30%;
+        margin: 6px 0;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+    #shelf {
+        width: 100%;
+    }
+} 
+
+
+
                     .fourthProject {
-                        height: 80vh;
-                        width: 100%;
                         height: auto;
+                        width: 100%;
                         display: table;
                         float: left;
+                        background-color: #EEEEEE;
                     }
 
                     .titleFour {
                         text-align: center;
-                        padding: 2vh;
                         font-size: 5vh;
+                        padding-top: 2vh;
                     }
+
+#descriptionFour {
+    text-align: justify;
+    width: 50vw;
+}
+
+
+#videoart {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -20vh;
+}
+
+@media only screen and (max-width: 800px){
+    #videoart {
+        width: 30%;
+        margin: 6px 0;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+    #videoart {
+        width: 100%;
+    }
+} 
