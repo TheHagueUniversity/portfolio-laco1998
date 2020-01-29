@@ -43,17 +43,14 @@ body {
     text-shadow: 5px 5px #D72323;
     line-height: 140%;
     padding: 0px;
+    height: auto;
 }
 
 #author {
     margin-bottom: 25px;
 }
 
-#scrollText {
-    padding-top: 20vh;
-    padding-bottom: 5vh;
-    margin-bottom: 15px;
-}
+
 
 #portfolio {
     background-color: #3A4750;
@@ -106,11 +103,10 @@ body {
 }
 
 .scroll {
-    font-family: "Courier New", Courier, monospace;
-    text-align: center;
-    color: #C3C3C3;
-    margin-top: 7.5vh;
-    margin-bottom: 2vh;
+    display: table;
+    justify-content: center;
+    margin-left: 48vw;
+    margin-top: 7vh;
 }
 
 .profession {
@@ -118,6 +114,50 @@ body {
     font-size: 3vh;
     color: #C3C3C3;
 }
+
+.slogan {
+    float: right;
+    text-align: left;
+    position: relative;
+    top: -48vh;
+    right: 15vw;
+    font-size: 5vh;
+}
+
+.w1 {
+    color: #EEEEEE;
+    animation-name: first;
+    animation-duration: 6s;
+}
+
+    @keyframes first {
+     from {opacity: 0}
+     to {opacity: 1}
+}
+
+.w2 {
+    color: #C3C3C3;
+    animation-name: second;
+    animation-duration: 10s;
+}
+
+    @keyframes second {
+     from {opacity: 0}
+     to {opacity: 1}    
+}
+
+.w3 {
+    color: white;
+        color: #C3C3C3;
+    animation-name: third;
+    animation-duration: 15s;
+}
+
+    @keyframes third {
+     from {opacity: 0}
+     to {opacity: 1}    
+}
+
 
 /********** ABOUT ME PAGE **********/
 
@@ -179,7 +219,7 @@ body {
 .work {
     background: #d72323;
     padding-top: 10px;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     display: table;
     float: left;
@@ -290,7 +330,7 @@ body {
 .details {
     background: #d72323;
     padding: 10px;
-    height: 50vh;
+    height: 30vh;
     display: table;
     width: 100%;
     float: left;
@@ -332,8 +372,26 @@ body {
 
 /********** PROJECTS **********/
 
+#backButton {
+    background-color: #3A4750;
+    border: hidden;
+    color: white;
+    transition-duration: 0.4s;
+    font-size: 3vh;
+    padding: 2vw;
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: 3vh;
+}
+
+#backButton:hover {
+    background-color: #EEEEEE;
+    color: #3A4750;
+}
+
+
 .firstProject {
-    height: 100vh;
+    height: 80vh;
     color: #EEEEEE;
     display: table;
     width: 100%;
@@ -341,7 +399,8 @@ body {
 
 .titleOne {
     text-align: center;
-    padding: 5vh;
+    padding: 2vh;
+    font-size: 5vh;
 }
 
 #descriptionOne {
@@ -351,7 +410,7 @@ body {
 }
 
                     .secondProject {
-                        height: 100vh;
+                        height: 80vh;
                         background-color: #EEEEEE;
                         width: 100%;
                         height: auto;
@@ -362,16 +421,18 @@ body {
                     .titleTwo {
                         text-align: center;
                         padding: 5vh;
+                        font-size: 5vh;
                     }
 
                     #descriptionTwo {
                         text-align:justify;
                         width: 40vw;
-                        padding: 5vh;
+                        padding: 2vh;
                     }
 
+
 .thirdProject {
-    height: 100vh;
+    height: 80vh;
     background-color: #D72323;
     width: 100%;
     height: auto;
@@ -381,11 +442,12 @@ body {
 
 .titleThree {
     text-align: center;
-    padding: 5vh;
+    padding: 2vh;
+    font-size: 5vh;
 }
 
                     .fourthProject {
-                        height: 100vh;
+                        height: 80vh;
                         width: 100%;
                         height: auto;
                         display: table;
@@ -394,5 +456,6 @@ body {
 
                     .titleFour {
                         text-align: center;
-                        padding: 5vh;
+                        padding: 2vh;
+                        font-size: 5vh;
                     }
