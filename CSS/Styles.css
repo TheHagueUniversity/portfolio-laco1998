@@ -25,6 +25,10 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 /********** HOME PAGE **********/
 
 .homepage {
@@ -374,7 +378,7 @@ body {
 #backButton {
     background-color: #3A4750;
     border: hidden;
-    color: white;
+    color: #EEEEEE;
     transition-duration: 0.4s;
     font-size: 3vh;
     padding: 2vw;
@@ -384,7 +388,8 @@ body {
 }
 
 #backButton:hover {
-    background-color: #D72323;
+    background-color: #EEEEEE;
+    color: #3A4750
 }
 
 
@@ -405,9 +410,10 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50vw;
+    width: 60vw;
     padding: 2vh;
     text-align: justify;
+    font-size: 3vh;
 }
 
 #hallmark1 {
@@ -436,6 +442,7 @@ body {
                         height: auto;
                         display: table;
                         float: left;
+                        color: #3A4752
                     }
 
                     .titleTwo {
@@ -446,7 +453,7 @@ body {
 
                     #descriptionTwo {
                         text-align:justify;
-                        width: 50vw;
+                        width: 60vw;
                     }
 
 #hallmark2 {
@@ -489,7 +496,7 @@ body {
 #descriptionThree {
     color: #EEEEEE;
     text-align: justify;
-    width: 50vw;
+    width: 60vw;
 }
 
 #shelf {
@@ -521,6 +528,7 @@ body {
                         display: table;
                         float: left;
                         background-color: #EEEEEE;
+                        color: #3A4750;
                     }
 
                     .titleFour {
@@ -531,7 +539,7 @@ body {
 
 #descriptionFour {
     text-align: justify;
-    width: 50vw;
+    width: 60vw;
 }
 
 
@@ -555,3 +563,23 @@ body {
         width: 100%;
     }
 } 
+
+#backTop {
+    background-color: #EEEEEE;
+    border: hidden;
+    color: #3A4750;
+    transition-duration: 0.4s;
+    font-size: 3vh;
+    padding: 2vw;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10vh;
+    margin-bottom: 5vh;
+}
+
+#backTop:hover {
+    background-color: #3A4750;
+    color: #EEEEEE;
+}
