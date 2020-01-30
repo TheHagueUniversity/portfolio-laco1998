@@ -1,419 +1,610 @@
+/********** COLOURS **********/
+
+/* white - #EEEEEE
+   black - #3A4750
+   red - #D72323 */
+
+/********** GENERAL **********/
+
 html {
-scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-background-color:#3A4750;
-font-family:Arial, Helvetica, sans-serif;
-height:100vh;
-justify-content:center;
-align-items:center;
-margin:0;
+    background-color: #3A4750;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 * {
-box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 a {
-text-decoration:none;
+    text-decoration: none;
 }
+
+/********** HEADER **********/
 
 .allButtons {
-text-align:center;
-margin-top:2vh;
+    text-align: center;
+    margin-top: 2vh;
 }
 
+#portfolio {
+    background-color: #3A4750;
+    border: hidden;
+    color: #EEEEEE;
+    transition-duration: 0.4s;
+    font-size: 3vh;
+    padding: 2vw;
+    cursor: pointer;
+}
+
+#portfolio:hover {
+    background-color: #EEEEEE;
+    color: #3A4750;
+}
+
+#aboutMeButton {
+    background-color: #3A4750;
+    border: hidden;
+    color: #EEEEEE;
+    transition-duration: 0.4s;
+    font-size: 3vh;
+    padding: 2vw;
+    cursor: pointer;
+}
+
+#aboutMeButton:hover {
+    background-color: #EEEEEE;
+    color: #3A4750;
+}
+
+#contactButton {
+    background-color: #3A4750;
+    border: hidden;
+    color: #EEEEEE;
+    transition-duration: 0.4s;
+    font-size: 3vh;
+    padding: 2vw;
+    cursor: pointer;
+}
+
+#contactButton:hover {
+    background-color: #EEEEEE;
+    color: #3A4750;
+}
+
+/********** HOME PAGE **********/
+
 .homepage {
-width:100%;
-height:auto;
-background-color:#3A4750;
-display:table;
-float:left;
+    width: 100%;
+    height: auto;
+    background-color: #3A4750;
+    display: table;
+    float: left;
 }
 
 .slogan {
-width:100%;
-display:table;
-text-align:center;
-font-size:4.2vw;
-padding-top:2vh;
-float:left;
+ width: 100%;    
+ display: table;
+ text-align: center;  
+ font-size: 4.2vw;
+ padding-top: 2vh;
+ float: left;
 }
 
 .w1 {
-color:#EEE;
-animation-name:first;
-animation-duration:6s;
+    color: #EEEEEE;
+    animation-name: first;
+    animation-duration: 6s;
 }
 
-to {
-opacity:1;
+    @keyframes first {
+     from {opacity: 0}
+     to {opacity: 1}
 }
 
 .w2 {
-color:#D6D6D6;
-animation-name:second;
-animation-duration:9s;
+    color: #D6D6D6;
+    animation-name: second;
+    animation-duration: 9s;
+}
+
+    @keyframes second {
+     from {opacity: 0}
+     to {opacity: 1}    
 }
 
 .w3 {
-color:#BEBEBE;
-animation-name:third;
-animation-duration:12s;
+    color: #BEBEBE;
+    animation-name: third;
+    animation-duration: 12s;
+}
+
+    @keyframes third {
+     from {opacity: 0}
+     to {opacity: 1}    
 }
 
 .name {
-color:#EEE;
-font-size:8vw;
-margin-left:5vw;
-text-shadow:.5vw .5vh #D72323;
-line-height:140%;
+    color: #EEEEEE;
+    font-size: 8vw;
+    margin-left: 5vw;
+    text-shadow: 0.5vw 0.5vh #D72323;
+    line-height: 140%;
 }
 
 #author {
-margin-bottom:25px;
+    margin-bottom: 25px;
 }
 
 .profession {
-margin-left:6vw;
-font-size:1.5vw;
-color:#C3C3C3;
-padding-bottom:1vh;
+    margin-left: 6vw;
+    font-size: 1.5vw;
+    color: #C3C3C3;
+    padding-bottom: 1vh;
 }
 
+/********** ABOUT ME PAGE **********/
+
 .about {
-width:100%;
-height:100vh;
-background-color:#EEE;
-display:table;
-float:left;
+    width: 100%;
+    height: 100vh;
+    background-color: #EEEEEE;
+    display: table;
+    float: left;
 }
 
 .title {
-text-align:center;
-font-size:30px;
-color:#3A4750;
-padding:.5vw;
+    padding: 0.5vw;
+    text-align: center;
+    font-size: 30px;
+    color: #3A4750;
 }
 
 .description {
-width:100%;
-font-size:3.5vh;
-display:flex;
-float:left;
+    width: 100%;
+    font-size: 3.5vh;
+    display: flex;
+    float: left;
 }
 
 #overview {
-width:60%;
-margin-left:5vw;
-text-align:justify;
-background-color:#3A4750;
-color:#EEE;
-padding:3vw;
+    width: 60%;
+    margin-left: 5vw;
+    text-align: justify;
+    background-color: #3A4750;
+    color: #EEEEEE;
+    padding: 3vw;
+    
 }
 
 .description img {
-float:left;
-border:solid 6px #3A4750;
-width:30%;
-height:30%;
-box-shadow:5px 10px #C3C3C3;
+    float: left;
+    border: solid 6px #3A4750;
+    width: 30%;
+    height: 30%;
+    box-shadow: 5px 10px #C3C3C3;
 }
 
+@media only screen and (max-width: 800px){
+    .description {
+        width: 40%;
+        margin: 6px 0;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+    .description {
+        width: 100%;
+    }
+} 
+
+/********** WORK EXPERIENCE **********/
+
 .work {
-background:#d72323;
-padding-top:10px;
-height:80vh;
-width:100%;
-display:table;
-float:left;
+    background: #d72323;
+    padding-top: 10px;
+    height: 80vh;
+    width: 100%;
+    display: table;
+    float: left;
 }
 
 #experience {
-color:#EEE;
-text-align:center;
-font-size:40px;
-padding:2vw;
+    padding: 2vw;
+    color: #EEEEEE;
+    text-align: center;
+    font-size: 40px;
 }
 
 .jobs {
-color:#3A4750;
-text-align:center;
-background-color:#EEE;
-width:60%;
-margin-left:19vw;
-margin-top:3vh;
-margin-bottom:3vh;
-justify-content:center;
-padding:2vh;
+    color: #3A4750;
+    text-align: center;
+    background-color: #EEEEEE;
+    padding: 2vh;
+    width: 60%;
+    margin-left: 19vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    justify-content: center;
 }
 
+.job1 {
+    margin: 5vh;
+}
+
+.job2 {
+    margin: 5vh;
+}
+
+.job3 {
+    margin: 5vh;
+}
+
+#job1 {
+    color: gray;
+}
+
+#job2 {
+    color: gray;
+}
+
+#job3 {
+    color: gray;
+}
+
+/********** EDUCATION **********/
+
 .education {
-height:auto;
-width:100%;
-display:table;
-float:left;
+    height: auto;
+    width: 100%;
+    display: table;
+    float: left;
 }
 
 #schools {
-color:#FFF;
-font-size:40px;
-text-align:center;
-margin-bottom:0;
-padding:2vw 1vw;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 2vw 1vw;
+    margin-bottom: 0;
 }
 
 .responsive {
-width:80%;
-height:auto;
-display:block;
-margin-left:auto;
-margin-right:auto;
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+
+/********** PORTFOLIO **********/
+
 .portfolio {
-background:#eee;
-height:100vh;
-width:100%;
-display:table;
-float:left;
+    background: #eeeeee;
+    height: 100vh;  
+    width: 100%;
+    display: table;
+    float: left;
 }
 
 #myWork {
-font-size:40px;
-text-align:center;
-color:#3A4750;
-padding:2vw;
+    font-size: 40px;
+    text-align: center;
+    color: #3A4750;
+    padding: 2vw;
+    
 }
 
 .column {
-float:left;
-width:25%;
-padding:5px;
+    float: left;
+    width: 25%;
+    padding: 5px;
 }
 
 .gallery::after {
-content:"";
-clear:both;
-display:table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
-.gallery img {
-width:100%;
-height:auto;
-transition:1s;
+@media only screen and (max-width: 800px){
+    .column {
+        width: 50%;
+        margin: 6px 0;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+    .column {
+        width: 100%;
+    }
+} 
+
+.gallery img{
+    width: 100%;
+    height: auto;
+    transition: 1s;
 }
 
 .gallery img:hover {
-transform:scale(1.1);
+    transform: scale(1.1);
 }
 
 .hint {
-display:flex;
-justify-content:center;
-color:grey;
-margin-bottom:15px;
+    display: flex;
+    justify-content: center;
+    color: grey;
+    margin-bottom: 15px;
 }
 
 .gallery {
-margin-right:2%;
+    margin-right: 2%;
 }
 
 .des {
-text-align:center;
-padding:15px;
+    padding: 15px;
+    text-align: center;
 }
 
+/********** CONTACT **********/
+
 .details {
-background:#d72323;
-height:30vh;
-display:table;
-width:100%;
-float:left;
-padding:10px;
+    background: #d72323;
+    padding: 10px;
+    height: 30vh;
+    display: table;
+    width: 100%;
+    float: left;
 }
 
 #contactDetails {
-color:#EEE;
-text-align:center;
-font-size:40px;
-margin-top:20px;
+    color: #EEEEEE;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
 }
 
 .myDetails {
-display:flex;
-width:100%;
-height:auto;
-justify-content:space-around;
-align-content:center;
-color:#C3C3C3;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    justify-content: space-around;
+    align-content: center;
+    color: #C3C3C3;
 }
+
+@media only screen and (max-width: 800px){
+    .myDetails {
+        font-size: 15px;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+    .myDetails {
+        font-size: 10px;
+    }
+} 
 
 #linkedIn {
-width:50px;
-height:50px;
+    width: 50px;
+    height: 50px;
 }
+
+/********** PROJECTS **********/
 
 #backButton {
-background-color:#3A4750;
-border:hidden;
-color:#EEE;
-transition-duration:.4s;
-font-size:3vh;
-cursor:pointer;
-margin-left:3vw;
-margin-top:3vh;
-padding:2vw;
+    background-color: #3A4750;
+    border: hidden;
+    color: #EEEEEE;
+    transition-duration: 0.4s;
+    font-size: 3vh;
+    padding: 2vw;
+    cursor: pointer;
+    margin-left: 3vw;
+    margin-top: 3vh;
 }
 
+#backButton:hover {
+    background-color: #EEEEEE;
+    color: #3A4750
+}
+
+
 .firstProject {
-height:auto;
-color:#EEE;
-display:table;
-width:100%;
+    height: auto;
+    color: #EEEEEE;
+    display: table;
+    width: 100%;
+}
+
+.titleOne {
+    text-align: center;
+    font-size: 5vh;
+    padding-top: 2vh;
 }
 
 .descriptions {
-display:block;
-margin-left:auto;
-margin-right:auto;
-width:60vw;
-text-align:justify;
-font-size:3vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    text-align: justify;
+    font-size: 3vh;
 }
 
 #hallmark1 {
-display:block;
-margin-left:auto;
-margin-right:auto;
-margin-bottom:2vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
 }
 
-.secondProject {
-background-color:#EEE;
-width:100%;
-height:auto;
-display:table;
-float:left;
-color:#3A4752;
+@media only screen and (max-width: 800px){
+    #hallmark1 {
+        width: 30%;
+        margin: 6px 0;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+    #hallmark1 {
+        width: 100%;
+    }
+} 
+                    .secondProject {
+                        background-color: #EEEEEE;
+                        width: 100%;
+                        height: auto;
+                        display: table;
+                        float: left;
+                        color: #3A4752
+                    }
+
+                    .titleTwo {
+                        text-align: center;
+                        font-size: 5vh;
+                        padding-top: 2vh;
+                    }
+
+                    #descriptionTwo {
+                        text-align:justify;
+                        width: 60vw;
+                    }
+
+#hallmark2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2vh;
 }
+
+@media only screen and (max-width: 800px){
+    #hallmark2 {
+        width: 30%;
+        margin: 6px 0;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+    #hallmark2 {
+        width: 100%;
+    }
+} 
+
+
 
 .thirdProject {
-width:100%;
-height:auto;
-display:table;
-float:left;
+    width: 100%;
+    height: auto;
+    display: table;
+    float: left;
+    background-color: #3A4750;
 }
 
 .titleThree {
-text-align:center;
-font-size:5vh;
-padding-top:2vh;
-color:#EEE;
+    text-align: center;
+    font-size: 5vh;
+    padding-top: 2vh;
+    color: #EEEEEE;
 }
 
 #descriptionThree {
-color:#EEE;
-text-align:justify;
-width:60vw;
+    color: #EEEEEE;
+    text-align: justify;
+    width: 60vw;
 }
 
-.fourthProject {
-height:auto;
-width:100%;
-display:table;
-float:left;
-background-color:#EEE;
-color:#3A4750;
+#shelf {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2vh;
 }
+
+@media only screen and (max-width: 800px){
+    #shelf {
+        width: 30%;
+        margin: 6px 0;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+    #shelf {
+        width: 100%;
+    }
+} 
+
+
+
+                    .fourthProject {
+                        height: auto;
+                        width: 100%;
+                        display: table;
+                        float: left;
+                        background-color: #EEEEEE;
+                        color: #3A4750;
+                    }
+
+                    .titleFour {
+                        text-align: center;
+                        font-size: 5vh;
+                        padding-top: 2vh;
+                    }
+
+#descriptionFour {
+    text-align: justify;
+    width: 60vw;
+}
+
+
+#videoart {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2vh;
+}
+
+@media only screen and (max-width: 800px){
+    #videoart {
+        width: 30%;
+        margin: 6px 0;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+    #videoart {
+        width: 100%;
+    }
+} 
 
 #backTop {
-background-color:#EEE;
-border:hidden;
-color:#3A4750;
-transition-duration:.4s;
-font-size:3vh;
-cursor:pointer;
-display:block;
-margin-left:auto;
-margin-right:auto;
-padding:2vw 2vw 2vh;
+    background-color: #EEEEEE;
+    border: hidden;
+    color: #3A4750;
+    transition-duration: 0.4s;
+    font-size: 3vh;
+    padding: 2vw;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vw;
 }
 
 #backTop:hover {
-background-color:#3A4750;
-color:#EEE;
+    background-color: #3A4750;
+    color: #EEEEEE;
 }
 
-#portfolio,#aboutMeButton,#contactButton {
-background-color:#3A4750;
-border:hidden;
-color:#EEE;
-transition-duration:.4s;
-font-size:3vh;
-cursor:pointer;
-padding:2vw;
-}
-
-#portfolio:hover,#aboutMeButton:hover,#contactButton:hover,#backButton:hover {
-background-color:#EEE;
-color:#3A4750;
-}
-
-.job1,.job2,.job3 {
-margin:5vh;
-}
-
-#job1,#job2,#job3 {
-color:gray;
-}
-
-.titleOne,.titleTwo,.titleFour {
-text-align:center;
-font-size:5vh;
-padding-top:2vh;
-}
-
-#descriptionTwo,#descriptionFour {
-text-align:justify;
-width:60vw;
-}
-
-#hallmark2,#shelf,#videoart {
-display:block;
-margin-left:auto;
-margin-right:auto;
-padding-bottom:2vh;
-}
-
-@media only screen and max-width 800px{
-.description {
-width:40%;
-margin:6px 0;
-}
-
-.column {
-width:50%;
-margin:6px 0;
-}
-
-.myDetails {
-font-size:15px;
-}
-
-#hallmark1,#hallmark2,#shelf,#videoart {
-width:30%;
-margin:6px 0;
-}
-}
-
-@media only screen and max-width 600px{
-.myDetails {
-font-size:10px;
-}
-
-.description,.column,#hallmark1,#hallmark2,#shelf,#videoart {
-width:100%;
-}
+.end {
+    background-color: #EEEEEE;
 }
