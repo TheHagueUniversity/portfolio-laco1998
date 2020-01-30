@@ -150,6 +150,9 @@ a {
     padding-bottom: 1vh;
 }
 
+#scrolling {
+    font-size: 1.5vw;
+}
 /********** ABOUT ME PAGE **********/
 
 .about {
@@ -194,7 +197,7 @@ a {
 
 @media only screen and (max-width: 800px){
     .description {
-        width: 40%;
+        width: 60%;
         margin: 6px 0;
     }
 } 
@@ -352,6 +355,7 @@ a {
 .des {
     padding: 15px;
     text-align: center;
+    font-weight: bold;
 }
 
 /********** CONTACT **********/
