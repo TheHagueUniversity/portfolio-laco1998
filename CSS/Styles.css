@@ -29,32 +29,15 @@ a {
     text-decoration: none;
 }
 
-/********** HOME PAGE **********/
+/********** HEADER **********/
 
-.homepage {
-    width: 100%;
-    height: auto;
-    background-color: #3A4750;
-    display: table;
-    float: left;
+.topofthepage {
 }
 
-.name {
-    color: #EEEEEE;
-    font-size: 8vw;
-    margin-top: -10vh;
-    margin-left: 5vw;
-    text-shadow: 5px 5px #D72323;
-    line-height: 140%;
-    padding: 0px;
-    height: auto;
+.allButtons {
+    text-align: center;
+    margin-top: 2vh;
 }
-
-#author {
-    margin-bottom: 25px;
-}
-
-
 
 #portfolio {
     background-color: #3A4750;
@@ -66,10 +49,6 @@ a {
     cursor: pointer;
 }
 
-.allButtons {
-    text-align: center;
-    margin-top: 2vh;
-}
 
 #portfolio:hover {
     background-color: #EEEEEE;
@@ -106,25 +85,25 @@ a {
     color: #3A4750;
 }
 
-.scroll {
-    display: block;
-    margin-left: 48vw;
-    margin-top: 7vh;
-}
+/********** HOME PAGE **********/
 
-.profession {
-    margin-left: 6vw;
-    font-size: 3vh;
-    color: #C3C3C3;
+.homepage {
+    width: 100%;
+    height: auto;
+    background-color: #3A4750;
+    display: table;
+    float: left;
+    clear: none;
 }
 
 .slogan {
-    float: right;
-    text-align: left;
-    position: relative;
-    top: -48vh;
-    right: 15vw;
-    font-size: 5vh;
+ width: 100%;    
+ display: table;
+ text-align: center;  
+ font-size: 4.2vw;
+ padding-top: 2vh;
+ float: left;
+ clear: none;
 }
 
 .w1 {
@@ -161,6 +140,34 @@ a {
      to {opacity: 1}    
 }
 
+.name {
+    color: #EEEEEE;
+    font-size: 8vw;
+    margin-left: 5vw;
+    text-shadow: 5px 5px #D72323;
+    line-height: 140%;
+    margin-top: 0;
+}
+
+#author {
+    margin-bottom: 25px;
+    height: auto;
+}
+
+.profession {
+    margin-left: 6vw;
+    font-size: 1.5vw;
+    color: #C3C3C3;
+}
+
+.scroll {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin-left: 48vw;
+    margin-top: 7vh;
+    margin-bottom: 2vh;   
+}
 
 /********** ABOUT ME PAGE **********/
 
@@ -244,6 +251,7 @@ a {
     margin-left: 19vw;
     margin-top: 3vh;
     margin-bottom: 3vh;
+    justify-content: center;
 }
 
 .job1 {
@@ -273,7 +281,7 @@ a {
 /********** EDUCATION **********/
 
 .education {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: table;
     float: left;
@@ -284,13 +292,15 @@ a {
     font-size: 40px;
     text-align: center;
     padding: 2vw 1vw;
+    margin-bottom: 0;
 }
 
 .responsive {
-    width: 70%;
+    width: 80%;
     height: auto;
-    margin-left: 15vw;
-    margin-top: -5vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
