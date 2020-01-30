@@ -235,6 +235,41 @@ a {
     font-size: 40px;
 }
 
+.jobs {
+    color: #3A4750;
+    text-align: center;
+    background-color: #EEEEEE;
+    padding: 2vh;
+    width: 60%;
+    margin-left: 19vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.job1 {
+    margin: 5vh;
+}
+
+.job2 {
+    margin: 5vh;
+}
+
+.job3 {
+    margin: 5vh;
+}
+
+#job1 {
+    color: gray;
+}
+
+#job2 {
+    color: gray;
+}
+
+#job3 {
+    color: gray;
+}
+
 /********** EDUCATION **********/
 
 .education {
